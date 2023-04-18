@@ -1,0 +1,61 @@
+
+<div class="main">
+
+ <link rel="stylesheet" href="styles.css">
+
+  <h1 id="title">National Unemployment Survey Form</h1>
+
+  <p id="description">
+    Thank you for helping me build this webpage.
+  </p>
+  
+   <div class="main-content">
+
+  <div class="form-content">
+
+    <form id="survey-form">
+
+      <label for="name" id="name-label">Name</label>
+
+      <input id="name" type="text" required placeholder="Enter your name" />
+
+      <label for="email" id="email-label">Email</label>
+       <input id="email" type="email" required placeholder="Enter your email" />
+      <label for="number" id="number-label">Enter your income from -$30,000 to +$100,00</label>
+       <input id="number" type="number" min="15000" max="225000" required placeholder="Enter your income" />
+      
+      <label for="dropdown">Which option best describes your unemployment status?</label>
+      <select id="dropdown">
+        <option value="Worker">Student</option>
+        <option value="Employed">Full time learner</option>
+        <option value="Self-Employed">Full time job</option>
+        <option value="prefer-not-to-say">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+      
+<fieldset>
+<legend>How many of these do you own?</legend>
+<input type="checkbox" name="action" checked id="house" value="house" />
+<label for="house">House</label><br />
+        <input type="checkbox" name="action" checked id="degree" value="degree" />
+        <label for="degree">Degree</label>
+        <br /></fieldset>
+
+      <fieldset>
+        <legend>Would you recommend this website to an acquaintance?</legend>
+        <input type="radio" name="action" checked id="definitely" value="definitely" />
+        <label for="definitely">Definitely</label><br />
+        <input type="radio" name="action" id="maybe" value="maybe"  />
+        <label for="maybe">Maybe</label><br />
+        <input type="radio" name="action" id="not-sure" value="not-sure" />
+        <label for="not-sure">Not sure</label><br />
+      </fieldset>
+      
+      <label for="comment">Any Questions?</label>
+      <textarea rows="4" cols="50" id="comment" >Enter your comment here...</textarea>
+      
+      <button type="submit" id="submit" value="submit">Submit</button>
+    </form>
+  </div>
+  </div>
+</div>
